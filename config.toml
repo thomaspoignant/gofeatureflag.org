@@ -10,7 +10,7 @@ disableKinds = ["taxonomy", "term"]
 
 [author]
   name = "GO Feature Flag"
-  headline = "Your feature flag "
+  headline = "Your simple backend less feature flag solution."
   image = "logo.png"  # path relative to static directory
 
   links = [
