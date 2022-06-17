@@ -1,0 +1,29 @@
+# baseURL = "https://your_domain.com/"
+languageCode = "en"
+defaultContentLanguage = "en"
+
+title = "GO Feature Flag"
+# copyright = "Copy, _right?_ :thinking_face:"
+
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
+
+[author]
+  name = "GO Feature Flag"
+  headline = "Your feature flag "
+  image = "logo.png"  # path relative to static directory
+
+  links = [
+    # 
+    { github = { href = "https://github.com/thomaspoignant/go-feature-flag", text = "GO Feature Flag" } },
+    { link = { href = "https://thomaspoignant.github.io/go-feature-flag", text = "Documentation" } },
+    { link = { href = "https://thomaspoignant.github.io/go-feature-flag-editor", text = "Flag Editor" } },
+    { github = { href = "https://github.com/thomaspoignant/go-feature-flag-editor", text = "Flag Editor sources" } },
+    { github = { href = "https://github.com/thomaspoignant/go-feature-flag-relay-proxy", text = "Relay proxy sources" } },
+    { email = "mailto:thomas.poignant@gmail.com" },
+  ]
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.86.1"
