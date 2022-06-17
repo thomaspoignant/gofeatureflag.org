@@ -1,4 +1,4 @@
-baseURL = "https://thomaspoignant.github.io/gofeatureflag.org/"
+baseURL = "https://gofeatureflag.org/"
 languageCode = "en"
 defaultContentLanguage = "en"
 
