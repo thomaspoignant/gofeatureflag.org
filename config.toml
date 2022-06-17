@@ -20,7 +20,7 @@ disableKinds = ["taxonomy", "term"]
     { link = { href = "https://thomaspoignant.github.io/go-feature-flag-editor", text = "Flag Editor" } },
     { github = { href = "https://github.com/thomaspoignant/go-feature-flag-editor", text = "Flag Editor sources" } },
     { github = { href = "https://github.com/thomaspoignant/go-feature-flag-relay-proxy", text = "Relay proxy sources" } },
-    { email = "mailto:thomas.poignant@gmail.com" },
+    { email = "mailto:contact@gofeatureflag.org" },
   ]
 
 [module]
