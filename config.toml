@@ -16,8 +16,8 @@ disableKinds = ["taxonomy", "term"]
   links = [
     # 
     { github = { href = "https://github.com/thomaspoignant/go-feature-flag", text = "GO Feature Flag" } },
-    { link = { href = "https://thomaspoignant.github.io/go-feature-flag", text = "Documentation" } },
-    { link = { href = "https://thomaspoignant.github.io/go-feature-flag-editor", text = "Flag Editor" } },
+    { link = { href = "https://docs.gofeatureflag.org", text = "Documentation" } },
+    { link = { href = "https://editor.gofeatureflag.org", text = "Flag Editor" } },
     { github = { href = "https://github.com/thomaspoignant/go-feature-flag-editor", text = "Flag Editor sources" } },
     { github = { href = "https://github.com/thomaspoignant/go-feature-flag-relay-proxy", text = "Relay proxy sources" } },
     { email = "mailto:contact@gofeatureflag.org" },
