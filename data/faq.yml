@@ -1,0 +1,21 @@
+---
+enable: true
+title: Frequently asked questions
+description:
+faqItem:
+  - question: How much it costs to get started?
+    answer: GO Feature Flag is completely free and open-source. You have nothing to pay to use it.
+    dataTarget: 1
+    show: show
+
+  - question: Where do I find GO Feature Flag SDKs?
+    answer: GO Feature Flag believe in standardization, that's why we are not developing any SDK and we rely only on Open-feature for this part.
+    dataTarget: 2
+    show:
+
+#  - question: How can I contribute?
+#    answer: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus a, expedita dolorum consequatur magni commodi tempore nesciunt soluta veritatis corporis iste labore eaque aliquam, sapiente debitis dignissimos aut exercitationem minima.
+#    dataTarget: 3
+#    show:
+
+

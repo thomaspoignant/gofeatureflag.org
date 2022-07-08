@@ -1,0 +1,16 @@
+#  icons can be found on https://themify.me/themify-icons
+---
+enable: true
+title: You can benefit more than you think
+services:
+  - icon: fa fa-rocket
+    title: Reliable deploys
+    description: Deploys should not be scary, you can sent your code and activate the feature later.
+
+  - icon: fa fa-rotate-left
+    title: Instant rollback
+    description: De-activate a feature as soon as an incident happen.
+
+  - icon: fa fa-flask
+    title: Run experiments
+    description: Experiments by providing features to a subset of your users, and analyse the datas. (A/B test, canary ....)
