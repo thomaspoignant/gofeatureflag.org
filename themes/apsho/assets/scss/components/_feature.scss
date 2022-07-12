@@ -1,0 +1,322 @@
+.feature {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100px;
+
+  /* Demo */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Color Variables */
+$color-black: #000;
+$color-purple: #4a154b;
+$color-blue: #4285f4;
+$color-green: #34a853;
+
+/* Social Icon Mixin */
+@mixin social-icon($color) {
+  background: $color;
+  color: #fff;
+
+  .tooltip {
+    background: $color;
+    color: currentColor;
+
+    &:after {
+      border-top-color: $color;
+    }
+  }
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 2.5rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+
+  &:hover {
+    color: #fff;
+
+    .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translate(-50%, -150%);
+    }
+  }
+    
+  &:active {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+  }
+  
+  &--black { @include social-icon($color-black); }
+  &--purple { @include social-icon($color-purple); }
+  &--blue { @include social-icon($color-blue); }
+  &--green { @include social-icon($color-green); }
+  
+  i {
+    position: relative;
+    top: 1px;
+  }
+}
+
+/* Tooltips */
+.tooltip {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0.8rem 1rem;
+  border-radius: 40px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translate(-50%, -100%);
+  transition: all 0.3s ease;
+  z-index: 1;
+  
+  &:after {
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    content: "";
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    transform: translate(-50%, 100%);
+  }
+}
+
+  @include desktop {
+    text-align: center;
+    padding-bottom: 80px;
+  }
+
+  &-image {
+    position: relative;
+    text-align: center;
+
+    &-shape1,
+    &-shape2,
+    &-shape3,
+    &-shape4 {
+      position: absolute;
+      z-index: -1;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    &-shape1 {
+      @include desktop {
+        left: -13% !important;
+      }
+
+      @include tablet {
+        left: -17% !important;
+      }
+    }
+
+    &-shape2 {
+      @include desktop {
+        right: 5% !important;
+      }
+
+      @include tablet {
+        right: -10% !important;
+      }
+    }
+
+    &-shape3 {
+      @include desktop {
+        right: -7% !important;
+      }
+
+      @include tablet {
+        right: -9% !important;
+      }
+    }
+
+    &-shape4 {
+      @include desktop {
+        left: -5% !important;
+      }
+
+      @include tablet {
+        left: -15% !important;
+      }
+    }
+  }
+
+  &-content {
+    @include desktop {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    &-terminal{
+      $button-diameter: 12px;
+
+      $button-not-focused: rgb(220, 220, 220);
+      $button-close: rgb(255, 97, 89);
+      $button-minimize: rgb(255, 191, 47);
+      $button-maximize: rgb(37, 204, 62);
+      
+      $button-spacing: 4px;
+      
+      $window-not-focused: rgb(246, 246, 246);
+      $window-focused: linear-gradient(0deg, rgb(216, 216, 216), rgb(236, 236, 236));
+      $window-border: rgb(179, 179, 179);
+      
+      $handle-height: 22px;
+      
+      $window-width: 540px;
+      $window-height: 430px;
+
+      &-window {
+        width: $window-width;
+        &-handle {
+          height: $handle-height;
+      
+          background: $window-focused;
+      
+          border-top: 1px solid white;
+          border-bottom: 1px solid $window-border;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+      
+          color: rgba(0, 0, 0, 0.7);
+      
+          font-family: Helvetica, sans-serif;
+          font-size: 13px;
+      
+          line-height: $handle-height;
+          text-align: center;
+        }
+      }
+
+      &-terminal {
+        padding: $button-spacing;
+    
+        background-color: black;
+        opacity: 0.7;
+    
+        height: $window-height / 2 - $handle-height;
+    
+        color: white;
+    
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 200;
+        font-size: 14px;
+    
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+    
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin-bottom: 30px;
+        
+        overflow-y: auto;
+       
+        #percentage {
+          color:rgb(37, 204, 62);
+        }
+
+        .comment{
+          color:rgb(37, 204, 62);
+          font-style:italic;
+        }
+      }
+    }
+
+    h2 {
+      margin-bottom: 30px;
+
+      @include tablet {
+        font-size: 35px;
+        line-height: 40px;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 30px;
+    }
+
+    &-list {
+      margin-top: 50px;
+
+      @include desktop {
+        display: flex;
+        justify-content: center;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+          list-style: none;
+          display: flex;
+          align-items: left;
+          &:not(:last-child) {
+            margin-bottom: 15px;
+          }
+
+          i {
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            line-height: 20px;
+            margin-right: 15px;
+            color: $primary-color;
+            display: inline-block;
+            font-size: 24px;
+            font-weight: bold;
+          }
+
+          p {
+            font-weight: 500;
+            margin-bottom: 0;
+            display: inline-block;
+            color: $text-color-dark;
+            @include desktop-lg {
+              font-size: 14px;
+            }
+            @include mobile {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
