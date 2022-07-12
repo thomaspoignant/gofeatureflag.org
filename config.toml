@@ -1,29 +1,70 @@
+# MAIN base
 baseURL = "https://gofeatureflag.org/"
-languageCode = "en"
-defaultContentLanguage = "en"
-
+languageCode = "en-us"
 title = "GO Feature Flag"
-# copyright = "Copy, _right?_ :thinking_face:"
+theme = "apsho"
 
-enableEmoji = true
-disableKinds = ["taxonomy", "term"]
+# Navigation Bar
+[[menu.main]]
+    name = "Home"
+    url = "#hero"
+    weight = 1
+[[menu.main]]
+    name = "About"
+    url = "#feature"
+    weight = 2
+[[menu.main]]
+    name = "Why"
+    url = "#benefits"
+    weight = 3
+[[menu.main]]
+    name = "Documentation"
+    url = "https://docs.gofeatureflag.org"
+    weight = 4
+[[menu.main]]
+    name = "Editor"
+    url = "https://editor.gofeatureflag.org"
+    weight = 5
 
-[author]
-  name = "GO Feature Flag"
-  headline = "Your simple backend less feature flag solution."
-  image = "logo.png"  # path relative to static directory
+# Footer Sitemap
+[[menu.sitemap]]
+    name = "Home"
+    url = "#"
+    weight = 1
+[[menu.sitemap]]
+    name = "Latest Article"
+    url = "/blog"
+    weight = 2
+# [[menu.sitemap]]
+#     name = "Privacy & Policy"
+#     url = "/privacy"
+#     weight = 3
+[[menu.sitemap]]
+    name = "Contact"
+    url = "/contact"
+    weight = 4
 
-  links = [
-    # 
-    { github = { href = "https://github.com/thomaspoignant/go-feature-flag", text = "GO Feature Flag" } },
-    { link = { href = "https://docs.gofeatureflag.org", text = "Documentation" } },
-    { link = { href = "https://editor.gofeatureflag.org", text = "Flag Editor" } },
-    { github = { href = "https://github.com/thomaspoignant/go-feature-flag-editor", text = "Flag Editor sources" } },
-    { github = { href = "https://github.com/thomaspoignant/go-feature-flag-relay-proxy", text = "Relay proxy sources" } },
-    { email = "mailto:contact@gofeatureflag.org" },
-  ]
+# Footer Address
+[params.address]
+address = "Paris, France"
+email = "contact@gofeatureflag.org"
 
-[module]
-  [module.hugoVersion]
-    extended = false
-    min = "0.86.1"
+# Footer Social
+[params.social]
+twitter = "https://twitter.com/go-feature-flag"
+github = "https://github.com/thomaspoignant"
+
+[params]
+
+# Header
+logo = "images/logo.png"
+formspreeURL = "https://formspree.io/f/xqknoogk"
+googleAnalytics = "G-YMBZZ2GYSK"
+
+# Footer
+footerTitle = "Get the latest app updates"
+copyright1 = "All right reserved"
+copyright2 = "© GO-feature-flag {year}"
+
+#contact
+email = "contact@gofeatureflag.org"

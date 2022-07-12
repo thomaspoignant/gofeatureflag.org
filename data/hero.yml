@@ -1,0 +1,15 @@
+---
+enable: true
+title: Ship Faster, Reduce Risk, and Build Scale
+caption: GO Feature FLag
+description:
+  Feature flags lets you modify system behavior without changing code. 
+  Deploy every day, release when you are ready.
+  Reduce risk by releasing your features progressively.
+buttons:
+  - name: Available on
+    text: Github
+    link: https://github.com/thomaspoignant?tab=repositories&q=go-feature-flag&type=&language=&sort=stargazers
+    icon: fa-brands fa-github
+
+image: images/hero/goff-logo.png

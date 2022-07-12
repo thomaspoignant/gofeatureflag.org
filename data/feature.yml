@@ -1,0 +1,68 @@
+---
+enable: true
+title: A simple and complete feature flag solution.
+description: No complex backend system or database to install, all you need is a file as your backend. No server is needed, just add a file to your central system and all your services will react to the changes in this file.
+description2: Rely 100% on the latest standard in the open-source, using Open-feature as the main communication point.
+buttonText: Getting started
+buttonLink: https://docs.gofeatureflag.org
+image1: images/feature/1.png
+image2: images/feature/2.png
+
+
+enable2nd: true
+Title2nd: Integrates with different systems
+description2nd: |
+  GO Feature flag is cloud ready and can retrieve his configuration from various places,
+  store your data usage where you want and notify you when something change.
+
+checkItem:
+  - text: Retrieve your file from S3, Google Cloud, Github, Kubernetes, and more ...
+  - text: Store flags usage in your favorite dataset (S3, GCP, ).
+  - text: Be notify on slack or via a webhook that your flag has changed.
+  - text: You can also extend GO Feature Flag if needed.
+
+integrations:
+  - name: Kubernetes
+    color: blue
+    icon: fas fa-dharmachakra
+
+  - name: Github
+    color: black
+    icon: fab fa-github
+
+  - name: Slack
+    color: purple
+    icon: fab fa-slack
+
+  - name: Local file
+    color: black
+    icon: fas fa-file
+  
+  - name: HTTP endpoints
+    color: green
+    icon: fas fa-cloud-arrow-down
+
+  - name: Google Cloud storage
+    color: blue
+    icon: fab fa-google
+
+  - name: Webhooks
+    color: black
+    icon: fas fa-arrow-right-arrow-left
+
+title3rd: Advanced rollout capabilities
+description3rd: Feature flags allow to unlink deploy and released, this means that you can decide how to release a feature without to think about architecture and complex deployments.
+description3rd2: These technics will give you the opportunity to have a more control on your rollout changes and will ensure that everything happen as expected.
+image3: images/feature/3.png
+
+rollouts:
+  - title: Rules
+    text: Impact only the users you want to target. 
+  - title: Canary release
+    text: Enable the feature only to a subset of your users. 
+  - title: Progressive rollout
+    text: Affect from 0% to 100% of users within a time frame, you can monitor while releasing the change.
+  - title: Scheduled Workflows
+    text: Modify your flag during the time to impact more/less users.
+  - title: A/B testing
+    text: Split your audience in multiple groups and track their usage.
