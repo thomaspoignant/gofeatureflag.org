@@ -1,9 +1,0 @@
-[submodule "themes/themes/aspho"]
-	path = themes/themes/aspho
-	url = git@github.com:StaticMania/hugo-apsho.git
-[submodule "themes/aspho"]
-	path = themes/aspho
-	url = git@github.com:StaticMania/hugo-apsho.git
-[submodule "themes/apsho"]
-	path = themes/apsho
-	url = git@github.com:StaticMania/hugo-apsho.git
