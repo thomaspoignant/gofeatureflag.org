@@ -35,10 +35,10 @@ theme = "apsho"
     name = "Latest Article"
     url = "/blog"
     weight = 2
-[[menu.sitemap]]
-    name = "Privacy & Policy"
-    url = "/privacy"
-    weight = 3
+# [[menu.sitemap]]
+#     name = "Privacy & Policy"
+#     url = "/privacy"
+#     weight = 3
 [[menu.sitemap]]
     name = "Contact"
     url = "/contact"
