@@ -220,7 +220,7 @@ $color-green: #34a853;
 
       &-terminal {
         padding: $button-spacing;
-    
+        text-align: left;
         background-color: black;
         opacity: 0.7;
     
@@ -251,6 +251,10 @@ $color-green: #34a853;
         .comment{
           color:rgb(37, 204, 62);
           font-style:italic;
+        }
+
+        pre {
+          color: #FFF;
         }
       }
     }
