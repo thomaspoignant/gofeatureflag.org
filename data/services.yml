@@ -5,7 +5,7 @@ title: You can benefit more than you think
 services:
   - icon: fa fa-rocket
     title: Reliable deploys
-    description: Deploys should not be scary, you can sent your code and activate the feature later.
+    description: Deploys should not be scary, you can send your code and activate the feature later.
 
   - icon: fa fa-rotate-left
     title: Instant rollback
