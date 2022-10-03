@@ -1,6 +1,6 @@
 ---
 enable: true
-title: Why using feature flags?
+title: Why use feature flags?
 description: |
   Feature flags is a modern software engineering technique that configure select functionality during runtime, without deploying new code. 
 
