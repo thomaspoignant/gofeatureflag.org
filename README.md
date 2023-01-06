@@ -1,3 +1,7 @@
+:warning: :warning: :warning:
+This repo is not used anymore. The website has been rewritten for GO Feature Flag v1.0.0 and is now available directly in the main repository [**thomaspoignant/go-feature-flag**](https://github.com/thomaspoignant/go-feature-flag/tree/main/website)
+:warning: :warning: :warning: 
+
 # [gofeatureflag.org](https://gofeatureflag.org)
 
 This repository contains the source of the website [gofeatureflag.org](https://gofeatureflag.org).
