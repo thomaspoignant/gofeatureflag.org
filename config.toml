@@ -1,5 +1,5 @@
 # MAIN base
-baseURL = "https://gofeatureflag.org/"
+baseURL = "https://thomaspoignant.github.io/gofeatureflag.org"
 languageCode = "en-us"
 title = "GO Feature Flag"
 theme = "apsho"
